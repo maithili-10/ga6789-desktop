@@ -1,0 +1,40 @@
+.rowData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 45px;
+  border-bottom: 1px solid var(--pageBorder);
+}
+
+.rowData h6 {
+  font-size: 11px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.transferGrp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orangeTxt {
+  color: var(--dagaColor);
+  font-size: 12px;
+}
+
+.transferGrp button {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-weight: 600;
+  color: var(--darkColor);
+  border-radius: 19px;
+  border: none;
+  background: transparent linear-gradient(109deg, #E1E1E1 0%, #C2C2C2 100%);
+}
+
+.transferGrp button:hover {
+  background: transparent linear-gradient(109deg, #C2C2C2 0%, #E1E1E1 100%);
+}

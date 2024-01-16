@@ -1,0 +1,286 @@
+:root {
+  --headerBkg: #10192d;
+  --secondaryHeaderBkg: #19253f;
+  --lightColor: white;
+  --darkColor: #0C1934;
+  --goldColor: #FFEB72;
+  --redColor: #FF0000;
+  --headerFooterColor: #CBCBCB;
+  --lightBkg: #b0b7c511;
+  --pageBorder: #878787;
+  /* Form */
+  --formBkg: transparent linear-gradient(224deg, #283C63 0%, #09152E 100%);
+  --fromBorderRadius: 29px;
+  --formShadow: 0px 0px 99px #000000;
+  --inputBkg: #333D54;
+  --inputRadius: 25px;
+  /* Active Button */
+  --activeBtn: transparent linear-gradient(180deg, #202F4E 0%, #10192D 100%);
+  --activeBtnHover: transparent linear-gradient(180deg, #10192D 0%, #202F4E 100%);
+  --btnRadius: 24px;
+  /* Disable button */
+  --disableColor: #141C25;
+  --disableBkg: #606060;
+  /* Game Button */
+  --gameBtnColor: #0C1934;
+  --gameBtnBorder: 1px solid #D6AE5B;
+  --gameBtnBorderRadius: 7px;
+  --gameBtnBkg: transparent linear-gradient(179deg, #FBEFAB 0%, #FFEB70 100%);
+  --gameBtnBkgHover: transparent linear-gradient(179deg, #FFEB70 0%, #FBEFAB 100%);
+  /* Daga styles */
+  --dagaColor: #FFAD6F;
+  --dagaBtnBkg: transparent linear-gradient(106deg, #FFAD6F 0%, #FF9544 100%);
+  --dagaBtnBkgHover: transparent linear-gradient(106deg, #FF9544 0%, #FFAD6F 100%);
+  /* Modal styles */
+  --modalOverlayBkg: transparent linear-gradient(215deg, #2c2c2c9d 0%, #000000a4 100%);
+  --modalBkg: transparent linear-gradient(228deg, #202e49 0%, #09152e 100%);
+  --modalRadius: 22px;
+  /* Login button, transfer all points, customer support  */
+  --goldBtnBkg: transparent linear-gradient(101deg, #EDCE62 0%, #AD7133 35%, #AD7133 67%, #EDCE62 100%);
+  --goldBtnBkgHover: transparent linear-gradient(350deg, #EDCE62 0%, #AD7133 35%, #AD7133 67%, #EDCE62 100%);
+  --goldBtnBorderColor: #D6AE5B;
+  /* transferpoints */
+  --greyBtn: transparent linear-gradient(180deg,#E1E1E1 0%,  #C2C2C2 100%);
+  --greyBtnHover: transparent linear-gradient(180deg, #C2C2C2 0%, #E1E1E1 100%);
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--headerBkg);
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Scroll styling */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: transparent linear-gradient(90deg, #10192d 0%, #202f4e);
+}
+
+/* home top banner dot css */
+
+/* .MuiMobileStepper-dots.css-1384nzf-MuiMobileStepper-dots {
+  position: relative;
+  margin-top: -70px !important;
+}
+
+.MuiMobileStepper-dot.css-26w9jf-MuiMobileStepper-dot {
+  background-color: white !important;
+} */
+
+/* 3d slider css */
+
+.swiper-wrapper {
+  display: flex;
+  left: 1.5%
+}
+
+/* -----------Test Styling------------- */
+
+/* .swiper_container { */
+/* background-color: peru; */
+/* position: relative; */
+/* display: flex; */
+/* justify-content: space-around !important; */
+/* align-items: center; */
+/* } */
+
+.swiper-slide {
+  width: 290px !important;
+  height: 590px !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+ 
+ }
+
+
+ 
+.swiper-slide,
+.swiper-slide-prev,
+.swiper-slide-next.swiper-slide-active,
+.swiper-slide-visible {
+  display: flex !important;
+  align-items: center !important;
+
+}
+
+.swiper-slide img {
+  /* position: relative; */
+  /* width: 220.17px !important; */
+  height: 390px !important;
+  /* border-radius: 2rem; */
+  /* object-fit: cover; */
+  transition: transform 0.3s ease;
+ 
+}
+.swiper-slide img:hover{
+  transform: translateY(-15px);
+  cursor: pointer;
+
+ }
+
+.swiper-slide h3 {
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+.swiper-slide p {
+  padding: 0 5%;
+  font-size: 14px
+}
+
+.swiper-slide button {
+  padding: 7px;
+  margin-bottom: -10px;
+  font-size: 13px;
+  width: 117px;
+  height: 32px;
+}
+
+/* actual slide image content */
+.swiper-slide-visible h3 {
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+.swiper-slide-visible p {
+  padding: 0 9%;
+  font-size: 12px;
+
+}
+
+.swiper-slide-visible button {
+  padding: 5px;
+  margin-bottom: -20px;
+  font-size: 13px;
+  width: 50%;
+  height: 30px;
+}
+
+/* active slide image content */
+.swiper-slide-active h3 {
+  font-size: 32px;
+}
+
+.swiper-slide-active p {
+  padding: 0 12% !important;
+  font-size: 16px !important;
+}
+
+.swiper-slide-active button {
+  /* padding: 5px !important; */
+  margin-bottom: 5px;
+  font-size: 18px;
+  width: 50%;
+  height: 35px;
+}
+
+/* prev and next slides image content */
+.swiper-slide-prev h3,
+.swiper-slide-next h3 {
+  font-size: 25px !important;
+  margin-bottom: -10px;
+}
+
+.swiper-slide-prev p {
+  padding: 0 7%;
+  font-size: 16px !important;
+}
+
+.swiper-slide-next p {
+  padding: 0 8%;
+  font-size: 16px !important;
+}
+
+.swiper-slide-prev button,
+.swiper-slide-next button {
+  /* padding: 7px !important; */
+  margin-bottom: -10px;
+  font-size: 16px;
+  width: 50%;
+  height: 35px;
+}
+
+/* width of slides images */
+.swiper-slide-prev img {
+  width: 262.22px !important;
+  height: 478.34px !important;
+}
+
+.swiper-slide-next img {
+  height: 480px !important;
+}
+
+.swiper-slide-active img {
+  width: 300.89px !important;
+  height: 500.91px !important;
+}
+
+
+/* gap between prev and next slides to the center slide */
+
+.swiper-slide-active {
+  left: -2% !important;
+}
+
+.swiper-slide-prev {
+  left: -0.2% !important;
+}
+
+.swiper-slide-next {
+  right: 2.5% !important;
+}
+
+/* hide slide shadows  */
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+/* prev and next images and hide default arrows */
+.slider-controler .swiper-button-next {
+  left: 91% !important;
+  transform: translateX(-95%) !important;
+  top: 50%
+}
+
+.slider-controler .swiper-button-prev {
+  left: 10% !important;
+  transform: translateX(-95%) !important;
+  top: 50%
+}
+
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.slider-controler .slider-arrow::after {
+  content: "";
+}
+
+/* Deposit input tooltip */
+.MuiTooltip-arrow {
+  left: -80px !important;
+}
+
+.css-1otkqrs-MuiPopper-root-MuiTooltip-popper {
+  z-index: 1 !important;
+}

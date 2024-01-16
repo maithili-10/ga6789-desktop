@@ -1,0 +1,171 @@
+.homeContentWrapper {
+  height: 250px;
+  border: 1px solid var(--lightColor);
+  padding: 5px;
+  margin: 5px 12px;
+  border-radius: 5px;
+}
+
+.homeContent {
+  color: var(--lightColor);
+  text-align: left;
+  overflow: auto;
+  height: 100%;
+}
+
+.bigText {
+  line-height: 30px;
+  margin: 0;
+}
+
+.homeContent p {
+  margin: 8px 0;
+  line-height: 21px;
+}
+
+.mainHeading {
+  text-align: center;
+}
+
+.firstTable,
+.secondTable,
+.summaryTable {
+  display: flex;
+  justify-content: center;
+}
+
+.homeContent table,
+.homeContent th,
+.homeContent td {
+  border: 1px solid var(--lightColor);
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.homeContent h4 {
+  margin: 12px 0;
+}
+
+.homeContent a {
+  color: var(--lightColor);
+}
+
+.homeContent ul {
+  margin: 10px 0;
+  padding-left: 25px;
+}
+
+.homeContent li {
+  padding-top: 5px;
+  line-height: 21px;
+}
+
+.imageContentOverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  min-width: 200px;
+  max-width: 430px;
+}
+
+.imageContentOverlay p {
+  text-align: center;
+}
+
+.secondTable table {
+  text-align: center;
+}
+
+.secondTable table thead {
+  font-size: 1.1rem;
+}
+
+.secondTable td {
+  padding: 6px;
+}
+
+.secondTable table tbody:nth-child(8),
+.secondTable table tbody:nth-child(9),
+.secondTable table tbody:nth-child(10),
+.secondTable table tbody:nth-child(11),
+.secondTable table tbody:nth-child(12),
+.secondTable table tbody:nth-child(13),
+.secondTable table tbody:nth-child(15) {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+  font-style: italic;
+}
+
+.myLinksWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.myLinks {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.summaryTable table thead {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.summaryTable table tr td:nth-child(2) {
+  width: 30%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainHeading h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .homeContent h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .homeContent p,
+  .secondTable table,
+  .homeContent li {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .mainHeading h2 {
+    font-size: 1.1rem;
+  }
+
+  .homeContent h3 {
+    font-size: 16px;
+  }
+
+  .homeContent h4 {
+    font-size: 15px;
+  }
+
+  .homeContent p,
+  .secondTable table,
+  .homeContent li {
+    font-size: 14px;
+  }
+
+  .myLinks {
+    font-size: 12px;
+  }
+}

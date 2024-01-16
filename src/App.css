@@ -1,0 +1,13 @@
+
+ .MuiButtonBase-root.MuiTab-root {
+    color: var(--headerFooterColor);
+    font-size: 16px;
+   
+  }
+ 
+  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.MuiTab-fullWidth.Mui-selected{
+    color: var(--goldColor);
+  }
+
+
+

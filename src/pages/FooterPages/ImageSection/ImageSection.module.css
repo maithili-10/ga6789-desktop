@@ -1,0 +1,16 @@
+.imageContentOverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper img {}
+
+.imageContentOverlay p {
+  text-align: center;
+}

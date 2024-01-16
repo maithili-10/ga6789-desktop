@@ -1,0 +1,168 @@
+.modalOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--modalOverlayBkg);
+
+}
+
+.modalWrapper {
+  width: 500px;
+  text-align: center;
+  padding: 30px;
+  /* background: var(--modalBkg); */
+  background: url('../../assets/LoginIcons/Login\ -\ Registeration\ BG.webp');
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+}
+
+.addAccountFormWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.helptext {
+  color: var(--lightColor);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.helptext.danger {
+  color: var(--redColor);
+}
+
+.requiredLabel {
+  display: flex;
+  gap: 5px;
+  color: var(--lightColor);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.requiredLabel span {
+  color: #C79353;
+  font-size: 20px;
+}
+
+.inputItem {
+  display: flex;
+  align-items: center;
+  background-color: var(--inputBkg);
+  border-radius: var(--inputRadius);
+  font-size: 16px;
+}
+
+.inputItem input::placeholder {
+  color: var(--inputPlaceholder);
+  opacity: 50%;
+}
+
+.inputItem input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 0 15px 20px;
+  color: var(--lightColor);
+  background-color: transparent;
+}
+
+.inputItem input:focus,
+.inputItem input:hover,
+.inputItem input:active,
+.inputItem input:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.addBankSelectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.addBankSelectWrapper select {
+  cursor: pointer;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 0 15px 20px;
+  color: var(--lightColor);
+  background-color: var(--inputBkg);
+  border-radius: var(--inputRadius);
+}
+
+.addBankSelectWrapper span {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: var(--lightColor);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.addBankSelectWrapper select:focus {
+  outline: none;
+}
+
+.addBankSelectWrapper select option {
+  background-color: #202e49;
+  color: var(--lightColor);
+}
+
+.errorMsg {
+  color: var(--redColor);
+  text-align: center;
+  padding-top: 8px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 1.2em;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.submitButton {
+  color: var(--lightColor);
+  background: var(--activeBtn);
+  border: 1px solid var(--lightColor);
+  border-radius: var(--btnRadius);
+}
+
+.submitButton:hover {
+  background: var(--activeBtnHover);
+}
+
+.cancelButton {
+  color: var(--disableColor);
+  background: var(--disableBkg);
+  border: 1px solid var(--disableBkg);
+  border-radius: var(--btnRadius);
+}
+
+.cancelButton:hover {
+  color: var(--disableBkg);
+  background: var(--disableColor);
+}
+
+.disabled {
+  box-shadow: none;
+  color: var(--disableColor);
+  cursor: not-allowed;
+  background: var(--disableBkg);
+  border: none;
+}
+
+.disabled:hover {
+  background: var(--disableBkg);
+  color: var(--disableColor);
+}

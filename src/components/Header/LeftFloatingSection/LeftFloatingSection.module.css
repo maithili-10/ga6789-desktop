@@ -1,0 +1,65 @@
+.floatingSectionOverlay {
+  position: absolute;
+  top: 24%;
+  display: flex;
+  align-items: center;
+  transition: .4s ease;
+  z-index: 10;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: var(--modalBkg);
+  border: 1px solid var(--goldColor);
+  border-left: 0;
+  border-bottom-right-radius: var(--modalRadius);
+  border-top-right-radius: var(--modalRadius);
+}
+
+.leftSection img {
+  cursor: pointer;
+}
+
+.leftSection img:hover {
+  transform: rotate(-15deg);
+}
+
+.closeSection {
+  transform: translateX(-77px);
+}
+
+.rightSection {
+  cursor: pointer;
+  padding: 25px 10px;
+  border-radius: 0 40px 40px 0;
+  background: var(--gameBtnBkg);
+  animation:pulse 0.5s infinite alternate;
+}
+
+.rightSection:hover {
+  background: var(--gameBtnBkgHover);
+}
+
+.rightSection img {
+  display: flex;
+  transition: transform .3s ease-in;
+}
+
+.hoverRight:hover img {
+  transform: translateX(5px);
+}
+
+.hoverLeft:hover img {
+  transform: translateX(-5px);
+}
+
+
+@keyframes pulse {
+  from { box-shadow:0px 0px 10px 3px var(--goldColor); }
+  to { box-shadow:0px 0px 20px 5px var(--goldColor); }
+}

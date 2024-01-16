@@ -1,0 +1,55 @@
+.promotionsWrapper {
+  padding: 2% 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: url('../../assets/PromotionPage//PromotionBkg.webp');
+  background-size: cover;
+}
+
+.promotionListOverlay {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  max-width: 1400px;
+}
+
+.promotionListWrapper {
+  padding: 4% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #b0b7c511;
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  backdrop-filter: blur(10px);
+  max-width: 1400px;
+  width: 100%;
+  flex: 1;
+  /* width: 85%; */
+}
+
+.imgWrapper {
+  width: 90%;
+  height: 180px;
+  margin: auto;
+  max-width: 1280px;
+  border-radius: 20px;
+
+}
+
+.imgWrapper img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .promotionListOverlay {
+    /* padding: 0% 10% 0% 10%; */
+    margin: 0 auto;
+
+  }
+}

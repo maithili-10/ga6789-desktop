@@ -1,0 +1,36 @@
+.casinoWrapper {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background: url('../../assets/CasinoPage/CasinoBkg.png');
+  background-size: cover;
+}
+
+.gamesOverlay {
+  padding-left: 8%;
+}
+
+.gamesWrapper {
+  display: flex;
+  gap: 1.5%;
+  overflow: auto;
+  padding-bottom: 2px;
+  padding-right: 1.5%;
+}
+
+.gamesWrapper::-webkit-scrollbar-thumb {
+  background: transparent linear-gradient(90deg, rgb(148, 146, 4) 0%, rgb(131, 9, 9));
+}
+
+.games {
+  position: relative;
+}
+
+.gamesButtonWrapper {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}

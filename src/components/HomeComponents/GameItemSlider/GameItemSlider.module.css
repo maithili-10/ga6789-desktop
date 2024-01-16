@@ -1,0 +1,40 @@
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.6s ease;
+ }
+
+.imageWrapper:hover{
+  transform: translateY(-20px);
+}
+
+.imageContent {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  bottom: 90px;
+}
+
+.imageContent h3 {
+  font-style: italic;
+  color: #fbda1b;
+}
+
+.imageContent p {
+  color: #ffffff;
+}
+
+.imageContent button {
+  background: var(--gameBtnBkg);
+  border: var(--gameBtnBorder);
+  border-radius:var(--gameBtnBorderRadius);
+  font-weight: bold;
+  color:var(--gameBtnColor);
+}
+
+.imageContent button:hover{
+  background: var(--gameBtnBkgHover);
+  cursor: pointer;
+}

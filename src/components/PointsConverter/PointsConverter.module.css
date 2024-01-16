@@ -1,0 +1,32 @@
+.convertionWrapper {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px 11px;
+  margin: 20px 0;
+  color: var(--lightColor);
+  background: #33508F;
+  overflow: auto;
+}
+
+.depositConvertionWrapper {
+  border-color: var(--lightColor);
+}
+
+.convertionWrapper strong {
+  font-weight: 600;
+}
+
+.convertionContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--lightColor);
+}
+
+.convertionContent span {
+  color: var(--goldColor);
+  font-size: 20px;
+}

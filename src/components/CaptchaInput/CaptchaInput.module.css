@@ -1,0 +1,44 @@
+.requiredLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.requiredLabel span {
+  color: var(--goldColor);
+  font-size: 20px;
+}
+
+.captchaInput {
+  display: flex;
+  align-items: center;
+  background-color: var(--inputBkg);
+  border-radius: var(--inputRadius);
+}
+
+.captchaInput input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 0 15px 20px;
+  color: var(--lightColor);
+  background-color: transparent;
+}
+
+.captchaInput input:focus {
+  outline: none;
+}
+
+.captchaInput input::placeholder {
+  color: var(--inputPlaceholder);
+  opacity: 30%;
+}
+
+.captchaInput img {
+  height: 32px;
+  margin-right: 18px;
+  border-radius: 2px;
+}

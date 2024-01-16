@@ -1,0 +1,64 @@
+.iosOverlay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: url('../../../assets/DownloadIcons/DownloadBkg.webp');
+  background-size: cover;
+  padding: 30px 15%;
+}
+
+.downloadWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.backSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--goldColor);
+  font-size: 22px;
+}
+
+.backSection img {
+  width: 10px;
+  cursor: pointer;
+}
+
+.iosWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 20px;
+  background: var(--lightBkg);
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  backdrop-filter: blur(10px);
+  width: calc(100% - 40px);
+}
+
+.ImageCard {
+  cursor: pointer;
+  padding: 0px 15px 15px 15px;
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  background: var(--modalBkg);
+}
+
+.ImageCard p {
+  margin: 10px 0;
+  color: var(--lightColor);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.ImageCard img {
+  border: 1px solid var(--pageBorder);
+  border-radius: 10px;
+  width: 180px;
+  height: 350px;
+}

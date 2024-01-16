@@ -1,0 +1,33 @@
+.modalOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalWrapper {
+  width: 500px;
+  max-height: 80%;
+  border-radius: var(--modalRadius);
+  overflow: auto;
+  color: var(--lightColor);
+  background: var(--modalBkg);
+  border: 1px solid var(--disableBkg);
+}
+
+.modalWrapper:focus {
+  outline: none;
+}
+
+.modalWrapper p {
+  margin: 0;
+  padding: 2px;
+}
+
+.modalWrapper p img {
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+}

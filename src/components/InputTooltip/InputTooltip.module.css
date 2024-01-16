@@ -1,0 +1,94 @@
+.depositInput {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  border-bottom: 1px solid var(--pageBorder);
+}
+
+.requiredLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.requiredLabel span {
+  color: #c79353;
+  font-size: 20px;
+}
+
+.inputWrapper {
+  position: relative;
+  flex-grow: 1;
+}
+
+.depositInput input {
+  flex-grow: 1;
+  overflow: auto;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--lightColor);
+  background-color: transparent;
+  border: none;
+  padding: 0 0 3px 10px;
+  position: relative;
+  width: 90%;
+}
+
+.depositInput input:focus,
+.depositInput input:hover,
+.depositInput input:active,
+.depositInput input:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.cancelIcon {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  min-width: 25px;
+}
+
+/* tooltip css */
+
+.tooltipWrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  left: 0px;
+}
+
+.tooltip {
+  display: flex;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ff5757;
+  width: 117px;
+  background-color: #4d000a;
+  border-radius: 9px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.tooltip span {
+  background-color: #4d000a;
+  color: var(--lightColor);
+  text-align: center;
+  border-radius: 6px;
+}
+
+.arrowDown {
+  left: 10px;
+  top: 25px;
+  position: absolute;
+}
+
+.arrowDown img {
+  width: 16px;
+}

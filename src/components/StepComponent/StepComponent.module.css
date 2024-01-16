@@ -1,0 +1,16 @@
+.stepOverlay {
+  /* width: 120px; */
+  width: max-content;
+  height: 225px;
+  background: var(--modalBkg);
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 7px;
+  border: 1px solid var(--pageBorder);
+  gap: 14px;
+  padding:  0 12px;
+}

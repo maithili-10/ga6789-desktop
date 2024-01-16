@@ -1,0 +1,47 @@
+.balanceSection {
+  position: relative;
+  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.balanceSectionWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dbIconWrapper,
+.modalArrow {
+  display: flex;
+}
+
+.balanceSectionWrapper span {
+  font-size: 18px;
+}
+
+/* @media only screen and (max-width: 414px) {
+  .dbIconWrapper img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .balanceSectionWrapper span {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .dbIconWrapper img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .balanceSectionWrapper span {
+    font-size: 10px;
+  }
+
+  .modalArrow {
+    height: 6px;
+  }
+} */

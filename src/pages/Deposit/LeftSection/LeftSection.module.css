@@ -1,0 +1,60 @@
+.leftSection {
+  width: 35%;
+  border-right: 1px solid var(--pageBorder);
+  padding: 10px 4% 0 0;
+}
+
+.errorMsg {
+  color: var(--redColor);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.companyBankSection {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.singleBankItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.singleBankItem img {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--lightColor);
+}
+
+.selectedBank img {
+  border-color: var(--goldColor);
+}
+
+.goldMessage {
+  font-weight: bold;
+  color: var(--goldColor);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.userInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestMsg {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .leftSection {
+    width: 45%;
+  }
+}

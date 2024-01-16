@@ -1,0 +1,75 @@
+.rightSectionOverlay {
+  width: 65%;
+  padding-top: 40px;
+}
+
+.rightSectionWrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.depositButtonSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.depositButton {
+  padding: 4px 15px;
+  border: 0px;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: var(--pageBorder);
+  cursor: pointer;
+  color: var(--lightColor);
+  border: 1px solid var(--lightColor);
+}
+
+.submitButton {
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4rem;
+  border-radius: var(--btnRadius);
+  width: 100%;
+  border: 1px solid var(--lightColor);
+  color: var(--lightColor);
+  background: var(--activeBtn);
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submitButton.disabled {
+  border-color: var(--disableBkg);
+  background: var(--disableBkg);
+  color: var(--disableColor);
+  cursor: not-allowed;
+}
+.errorMsg {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  color: var(--redColor);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+@media only screen and (max-width: 1440px) {
+  .rightSectionOverlay {
+    width: 55%;
+  }
+
+  .rightSectionWrapper {
+    width: 85%;
+  }
+}

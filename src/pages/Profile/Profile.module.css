@@ -1,0 +1,24 @@
+.profileWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileWrapper div {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid var(--pageBorder);
+}
+
+.profileWrapper div:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.profileWrapper div span:nth-child(1) {
+  width: 50%;
+}
+
+.profileWrapper div span:nth-child(2) {
+  width: 50%;
+  color: var(--goldColor);
+}

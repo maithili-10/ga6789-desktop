@@ -1,0 +1,90 @@
+.secondaryHeaderOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+  position: relative;
+  color: var(--lightColor);
+  background: var(--secondaryHeaderBkg);
+  box-shadow: 0px 1px 10px #00000099;
+  z-index: 4;
+}
+
+.headerLinksWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.headerLinks {
+  cursor: pointer;
+  color: #CBCBCB;
+  padding: 15px 0;
+  border-bottom: 2px solid var(--secondaryHeaderBkg);
+}
+
+.headerLinks img {
+  position: relative;
+  width: 17px;
+  bottom: 8px;
+  -webkit-animation: mover .9s infinite alternate;
+  animation: mover .9s infinite alternate;
+}
+
+.activePageStyling {
+  color: var(--goldColor);
+  border-color: var(--goldColor);
+}
+
+.inactivePage {
+  color: var(--lightColor);
+}
+
+.imgOptionWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* TÂI APP,ĐẠI LÝ no underline*/
+.imgOptionWrapper span {
+  border: none !important
+}
+
+.liveWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FF0000;
+  box-shadow: 0px 3px 13px #FF0000;
+  border-radius: 15px;
+  width: 70px;
+}
+
+.noGamesMessage {
+  font-size: 24px;
+  color: var(--lightColor);
+}
+
+/* Header links hot image animation */
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-2px);
+  }
+}

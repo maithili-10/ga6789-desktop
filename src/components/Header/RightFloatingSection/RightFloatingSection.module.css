@@ -1,0 +1,95 @@
+.floatingBtns {
+  position: absolute;
+  top: 24%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 15px;
+  background: var(--modalBkg);
+  border: 1px solid var(--goldColor);
+  border-radius: var(--modalRadius);
+  z-index: 3;
+  animation: pulse 0.5s infinite alternate;
+}
+
+/* glowing animation */
+@keyframes pulse {
+  from {
+    box-shadow: 0px 0px 10px 3px var(--goldColor);
+  }
+
+  to {
+    box-shadow: 0px 0px 20px 5px var(--goldColor);
+  }
+}
+
+
+.floatingOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--goldColor);
+  font-size: 10px;
+}
+
+.floatingOptions:hover {
+  cursor: pointer;
+}
+
+.floatingOptions img {
+  transition: transform .9s ease-out;
+}
+
+.floatingOptions:hover img {
+  transform: rotate(360deg);
+}
+
+/* zalo */
+.zaloModalContent {
+  position: absolute;
+  right: 90px;
+  top: 0px;
+  width: 250px;
+  height: 300px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--lightColor);
+  background: var(--modalBkg);
+  border: 0.3px solid var(--pageBorder);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.openSection {
+  display: flex;
+  animation: 1s fadeIn;
+}
+
+/* zalo modal animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.zaloModalContent span {
+  color: var(--redColor);
+  font-weight: bold;
+}
+
+.zaloImgWrapper {
+  text-align: center;
+  width: 230px;
+}
+
+.zaloImgWrapper img {
+  width: 100%;
+  border-radius: 10px;
+}

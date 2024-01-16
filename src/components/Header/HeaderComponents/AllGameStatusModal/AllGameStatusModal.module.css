@@ -1,0 +1,206 @@
+.allGamesOverlay {
+  position: absolute;
+  top: 60px;
+  right: 15%;
+}
+
+.allWalletGames {
+  display: flex;
+}
+
+.allGamesWrapper {
+  width: 604px;
+  max-height: 450px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: var(--secondaryHeaderBkg);
+}
+
+.allWalletGamesWrapper {
+  width: 1000px;
+  max-height: 530px;
+}
+
+.allGameHeader {
+  position: relative;
+  background-image: url('../../../../assets/HeaderIcons/DagaBkg.webp');
+}
+
+.allWalletGamesHeader {
+  position: relative;
+  background-image: url('../../../../assets/HeaderIcons/AllWalletDaga.webp');
+  background-repeat: no-repeat;
+}
+
+.headerLeftStatus {
+  position: absolute;
+  width: 130px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dagaColor);
+  clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
+}
+
+.headerLeftStatus span {
+  color: var(--darkColor);
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.allGameInnerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.dagaInfoOverlay {
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  padding-right: 3%;
+}
+
+.dagaInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.balance {
+  font-size: 22px;
+  color: var(--dagaColor);
+}
+
+.balanceError {
+  color: var(--redColor);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dagaInfo button {
+  cursor: pointer;
+  padding: 6px 12px;
+  font-weight: 600;
+  border-radius: 19px;
+  color: var(--darkColor);
+  background: var(--dagaBtnBkg);
+  border: none;
+}
+
+.dagaInfo button:hover {
+  background: var(--dagaBtnBkgHover);
+}
+
+.transferGrp button:hover {
+  background: transparent;
+}
+
+.allGamesBody {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  color: var(--headerFooterColor);
+  border: 1px solid var(--pageBorder);
+  border-top: 2px solid var(--pageBorder);
+}
+
+.allGamesBodyContent {
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  position: relative;
+}
+
+.allGamesBody::-webkit-scrollbar {
+  width: 0.15rem;
+}
+
+.allGamesBody::-webkit-scrollbar-thumb {
+  background-color: var(--lightColor);
+  border-radius: 50px;
+}
+
+.allGamesBodyRightStatus {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 130px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--headerFooterColor);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%);
+}
+
+.allGamesBodyRightStatus span {
+  color: var(--darkColor);
+  font-weight: 600;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.loaderOverlay {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: var(--redColor);
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.withdrawrError {
+  font-size: 14px;
+}
+
+.allGamesFooterWraper {
+  padding: 10px;
+  border-top: 1px solid var(--pageBorder);
+}
+
+.allGamesFooter {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 0;
+  color: var(--lightColor);
+  cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid var(--lightColor);
+  background: var(--activeBtn);
+}
+
+.allGamesFooter:hover {
+  background: var(--activeBtnHover)
+}
+
+.disabled {
+  color: var(--disableColor);
+  cursor: not-allowed;
+  border-color: var(--disableBkg);
+  background: var(--disableBkg);
+}
+
+.disabled:hover {
+  background: var(--disableBkg);
+}
+
+/* All wallet  */
+@media only screen and (max-width: 1280px) {
+  .allWalletGamesWrapper {
+    width: 700px;
+  }
+}

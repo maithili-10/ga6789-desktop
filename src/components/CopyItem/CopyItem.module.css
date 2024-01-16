@@ -1,0 +1,51 @@
+.bankDetailItem {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.homeMsg{
+  justify-content: space-around;
+  gap:30px;
+}
+.divWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.copyLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--lightColor);
+}
+
+.copyValue {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--goldColor);
+}
+
+.smallValue {
+  font-size: 12px;
+}
+
+.redText {
+  color: var(--redColor);
+}
+
+.copyButton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: var(--lightColor);
+}
+
+.copyButton span {
+  font-size: 14px;
+}
+
+.copyButton:active {
+  padding: 2px 5px;
+}

@@ -1,0 +1,63 @@
+.pageBannerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.pageBannerContent {
+  font-style: italic;
+  color: var(--lightColor);
+  /* width: 50%; */
+  text-shadow: 0px 3px 6px #000000;
+}
+
+.iconTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gap {
+  padding-bottom: 30px;
+}
+
+.pageBannerContent h2 {
+  /* width: 70%; */
+}
+
+.gamesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.game {
+  width: 48%;
+  position: relative;
+}
+
+.game img {
+  width: 100%;
+}
+
+.gameContentWrapper {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  width: 50%;
+  color: var(--lightColor);
+}
+
+.gamesButtonWrapper {
+  width: 55%;
+}
+
+.bannerWrapper {
+  width: 50%;
+}
+
+.bannerWrapper img {
+  width: 100%;
+}

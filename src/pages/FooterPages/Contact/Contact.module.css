@@ -1,0 +1,19 @@
+.contentOverlay {
+  margin: 3% 8%;
+  padding: 0 1% 1% 1%;
+  color: var(--lightColor);
+  background: #ddd3d300;
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  backdrop-filter: blur(10px);
+}
+
+.contentOverlay a {
+  color: rgb(148, 148, 224);
+}
+
+@media only screen and (max-width: 1440px) {
+  .contentOverlay {
+    margin: 1% 2%;
+  }
+}

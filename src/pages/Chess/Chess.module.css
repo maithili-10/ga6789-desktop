@@ -1,0 +1,158 @@
+.chessOverlay {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow: auto;
+  background: url("../../assets/ChessPage/ChessBkg.png");
+  background-size: cover;
+}
+
+.gamesOverlay {
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gamesWrapper {
+  display: flex;
+  overflow: auto;
+  padding-bottom: 2px;
+  border-top: 0.1px solid var(--lightColor);
+  border-left: 0.1px solid var(--lightColor);
+  border-right: 0.5px solid var(--lightColor);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.gamesWrapper::-webkit-scrollbar-thumb {
+  background: transparent linear-gradient(90deg, rgb(107, 107, 106) 0%, rgb(187, 185, 185));
+}
+
+
+.games {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-right: 0.5px solid var(--lightColor);
+  border-bottom: 0.5px solid var(--lightColor);
+  padding: 30px 25px 10px 35px;
+  color: var(--lightColor);
+  justify-content: center;
+  height: 129px;
+  min-width: 135px;
+}
+
+
+.gamesListWrapper {
+  border-top: none;
+  border-left: 0.5px solid var(--lightColor);
+  border-right: 0.5px solid var(--lightColor);
+  border-bottom: 0.5px solid var(--lightColor);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.searchInputWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+.searchInputWrapper img {
+  cursor: pointer;
+  margin-right: 15px;
+  width: 20px;
+}
+
+.formInput {
+  display: flex;
+  align-items: center;
+  background-color: var(--inputBkg);
+  border-radius: var(--inputRadius);
+  border: 1px solid var(--lightColor);
+  backdrop-filter: blur(30px);
+}
+
+.formInput input {
+  width: 360px;
+  font-size: 14px;
+  border: none;
+  padding: 9px 0 11px 20px;
+  color: var(--lightColor);
+  background-color: transparent;
+}
+
+.formInput input:focus {
+  outline: none;
+}
+
+.formInput input::placeholder {
+  color: var(--lightColor);
+  opacity: 0.3;
+}
+
+.allGamesWraper {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 6%;
+ 
+}
+
+.allGames {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.gameContentWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  color: var(--lightColor);
+}
+.gameImgOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gameImgOverlay img {
+  cursor: pointer;
+}
+
+
+.gameImgWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.gameButtonWrapper {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.gameButtonWrapper button {
+  padding: 4% 13%;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--gameBtnColor);
+  border: var(--gameBtnBorder);
+  border-radius: var(--gameBtnBorderRadius);
+  background: var(--gameBtnBkg);
+}
+
+.gameButtonWrapper{
+ opacity:0
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 2% 1%;
+}
+

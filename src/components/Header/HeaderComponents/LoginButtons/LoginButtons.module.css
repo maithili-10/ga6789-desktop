@@ -1,0 +1,42 @@
+.loginButtonsOverlay {
+  display: flex;
+  gap: 5%;
+}
+
+.loginButtonsOverlay button {
+  cursor: pointer;
+  color:  #10192D;
+  padding: 6px 0;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+  border: 0.5px solid #D6AE5B;
+  border-radius: 20px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginButtonsOverlay button:nth-child(1) {
+  background: transparent linear-gradient(108deg, #FFDF61 0%, #FCA953 100%) 0% 0% ;
+  border: 0.5px solid #D6AE5B;
+}
+
+.loginButtonsOverlay button:nth-child(1):hover {
+  background: transparent linear-gradient(108deg, #FCA953 0%, #FFDF61 100%) 0% 0% ;
+
+}
+
+.loginButtonsOverlay button:nth-child(2) {
+  background: transparent linear-gradient(108deg, #E5E5E5 0%, #959595 100%) 0% 0% ;
+  border: 0.5px solid #686868;
+
+}
+
+.loginButtonsOverlay button:nth-child(2):hover {
+  background: transparent linear-gradient(108deg, #959595 0%, #E5E5E5 100%) 0% 0% ;
+}

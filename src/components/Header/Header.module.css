@@ -1,0 +1,35 @@
+.headerOverlay {
+  /* min-height: 70px; */
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 6%; */
+  gap: 10px;
+  align-items: center;
+  color: var(--lightColor);
+  background: var(--headerBkg);
+  z-index: 6;
+}
+
+.headerOverlay video {
+  position: relative;
+  width: 100%;
+}
+
+.logoImageWrapper {
+  position: absolute;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 45px;
+}
+
+.logoImageWrapper img {
+  cursor: pointer;
+}
+
+.logoImageWrapper div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -1,0 +1,62 @@
+.eSportsWrapper {
+  padding: 5% 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow: auto;
+  background: url('../../assets/ESportsPage/ESportsBkg.png');
+  background-size: cover;
+}
+
+.iconTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--lightColor);
+}
+
+.eSportsaContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 0 5%;
+}
+
+.mainGamesWrapper {
+  display: flex;
+}
+
+.mainGameWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.mainGameWrapper img {
+  display: flex;
+}
+
+.otherGamesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.otherGamesHeader {
+  padding-top: 4%;
+  text-align: center;
+}
+
+.otherGamesHeader h3 {
+  margin: 0;
+  color: var(--goldColor);
+  font-size: 1.3rem;
+}
+
+.otherGamesHeader h1 {
+  margin: 0;
+  color: var(--lightColor);
+  font-size: 3rem;
+}

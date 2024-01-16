@@ -1,0 +1,99 @@
+.SelectBankOverlay {
+  border-bottom: 1px solid var(--pageBorder);
+}
+
+.SelectBankWrapper {
+  padding: 2% 0;
+  display: flex;
+  gap: 4%;
+}
+
+.BankSectionOverlay {
+  width: 45%;
+}
+
+.noBanksMsg {
+  color: var(--redColor);
+  font-size: 16px;
+}
+
+.BankSectionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.bankCardWrappwr {
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+}
+
+.bankCard {
+  align-items: center;
+  display: flex;
+  width: 150px;
+  height: 70px;
+  padding: 10px;
+  text-align: left;
+  color: var(--lightColor);
+  background: transparent linear-gradient(90deg, #4d576e 0%, #333d54 100%);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.bankCard:hover {
+  background: transparent linear-gradient(90deg, #333d54 0%, #4d576e 100%);
+}
+
+.selectedBank {
+  border-color: var(--goldColor);
+}
+
+.bankCardContent {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.AddBankBtnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  height: 70px;
+  color: var(--lightColor);
+  cursor: pointer;
+  background: transparent linear-gradient(180deg, #202f4e 0%, #10192d 100%);
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid var(--disableColor);
+}
+
+.AddBankBtnWrapper:hover {
+  background: transparent linear-gradient(180deg, #10192d 0%, #202f4e 100%);
+}
+
+.AddBankBtn {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1440px) {
+  .BankSectionOverlay {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .BankSectionOverlay {
+    width: 80%;
+  }
+}

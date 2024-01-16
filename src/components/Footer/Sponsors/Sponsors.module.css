@@ -1,0 +1,18 @@
+.sponsorsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 8%;
+  color: var(--lightColor);
+  background: var(--secondaryHeaderBkg);
+  box-shadow: 0px -3px 6px #00000061;
+  z-index: 4;
+  height: 40px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .sponsorsWrapper {
+    padding: 20px 2%;
+  }
+}

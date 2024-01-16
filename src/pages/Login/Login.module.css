@@ -1,0 +1,199 @@
+.loginWrapper {
+  height: 850px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url('../../assets/LoginIcons/LoginBg.webp');
+  background-size: cover;
+}
+
+.logoImageWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* width: 200px; */
+  /* height: 55px; */
+}
+
+.logoImageWrapper img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.formOverlay {
+  width: 500px;
+  margin: 0 15% 0 0;
+  background: var(--formBkg);
+  border: 1px solid var(--lightColor);
+  border-radius: var(--fromBorderRadius);
+  box-shadow: var(--formShadow);
+}
+
+.formWrapper {
+  padding: 40px;
+  color: var(--lightColor);
+}
+
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginHeader {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.loginFormbody {
+  padding: 30px 0px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.requiredLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.requiredLabel span {
+  color: var(--goldColor);
+  font-size: 20px;
+}
+
+.formInput {
+  display: flex;
+  align-items: center;
+  background-color: var(--inputBkg);
+  border-radius: var(--inputRadius);
+}
+
+.formInput input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 0 15px 20px;
+  color: var(--lightColor);
+  background-color: transparent;
+}
+
+.formInput input:focus {
+  outline: none;
+}
+
+.formInput input::placeholder {
+  color: var(--lightColor);
+  opacity: 0.3;
+}
+
+.inputPasswordWrapper {
+  display: flex;
+  position: relative;
+}
+
+.inputPasswordWrapper input {
+  width: 83%;
+  margin: 0 auto 0 0;
+}
+
+.inputPasswordWrapper img {
+  cursor: pointer;
+  margin-right: 15px;
+  width: 20px;
+}
+
+.error {
+  color: var(--redColor);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.forgotPassword {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forgotPassword div {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.apiResponseLoader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.apiResponseLoader div:nth-child(2) {
+  padding: 0 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.submitButton {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 0px;
+  cursor: pointer;
+  width: 100%;
+  color: var(--lightColor);
+  background: var(--activeBtn);
+  border: 1px solid var(--lightColor);
+  border-radius: var(--btnRadius);
+}
+
+.submitButton:hover {
+  background: var(--activeBtnHover);
+}
+
+.loading,
+.loading:hover {
+  border-color: var(--disableBkg);
+  color: var(--disableColor);
+  background: var(--disableBkg);
+  cursor: not-allowed;
+}
+
+.registerSection {
+  font-weight: 600;
+  text-align: center;
+}
+
+.loginLink {
+  margin-left: 0.4rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 1440px) {
+  .formOverlay {
+    width: 450px;
+    margin: 0 5% 0 0;
+  }
+
+  .formWrapper {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .formOverlay {
+    width: 400px;
+  }
+}

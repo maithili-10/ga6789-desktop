@@ -1,0 +1,44 @@
+.zaloModalOverlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zaloModalContent {
+  width: 450px;
+  height: 500px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--lightColor);
+  border: 0.3px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  background: var(--modalBkg);
+}
+
+.zaloModalContent:focus {
+  outline: none;
+}
+
+.zaloModalContent div:nth-child(2) {
+  color: var(--redColor);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.zaloModalContent div:nth-child(2) span {
+  color: var(--lightColor);
+}
+
+.zaloModalContent img {
+  width: 90%;
+  border-radius: var(--modalRadius);
+}
+
+.zaloModalContent img:hover {
+  width: 92%;
+}

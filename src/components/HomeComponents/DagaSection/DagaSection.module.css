@@ -1,0 +1,135 @@
+.dagaSectionOverlay {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 3% 6%
+}
+
+.dagaSectionWrapper {
+  width: 60%;
+}
+
+.tinyDagaSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.dagaSectionWrapper h4,
+.gamesSectionWrapper h4 {
+  font-style: italic;
+  font-size: 28px;
+  color: var(--goldColor);
+  font-size: 28px;
+  text-shadow: 2px 2px 5px var(--goldColor);
+}
+
+.dagaSection {
+  background-image: url("../../../assets/HomeImages/DagaCard.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-height: 383px;
+  border-radius: 23px;
+  align-items: center;
+}
+
+.dagaSection img {
+  position: relative;
+  left: -12%;
+}
+
+.dagaContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 22%;
+  left: 40%;
+  justify-content: center;
+}
+
+.dagaContent h3 {
+  font-style: italic;
+  font-size: 24px;
+  margin: 0;
+  color: var(--goldColor);
+  font-size: 26px;
+  text-shadow: 2px 2px 5px var(--goldColor);
+}
+
+.dagaContent p {
+  font-style: italic;
+  width: 80%;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.dagaContent button {
+  background: var(--gameBtnBkg);
+  border: var(--gameBtnBorder);
+  border-radius: var(--gameBtnBorderRadius);
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--gameBtnColor);
+  width: 200px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px var(--goldColor);
+}
+
+.dagaContent button:hover {
+  background: var(--gameBtnBkgHover);
+  cursor: pointer;
+}
+
+.gamesSectionWrapper {
+  width: 30%;
+}
+
+.gamesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-height: 380px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+.gamesSection img {
+  border-radius: 23px;
+  width: 100%;
+}
+
+.gamesSection img:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .dagaSection {
+    height: 247px;
+  }
+
+  .dagaSection img {
+    width: 40%;
+    left: -11%;
+  }
+
+  .dagaContent p {
+    font-size: 13px;
+  }
+
+  .dagaContent button {
+    width: 120px;
+    font-size: 15px;
+  }
+
+  .gamesSection {
+    height: 252px;
+  }
+}

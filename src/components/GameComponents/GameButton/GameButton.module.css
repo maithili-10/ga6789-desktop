@@ -1,0 +1,14 @@
+.gameButton {
+  cursor: pointer;
+  padding: 8px 0;
+  width: 100%;
+  font-weight: bold;
+  color: var(--gameBtnColor);
+  border: var(--gameBtnBorder);
+  border-radius: var(--gameBtnBorderRadius);
+  background: var(--gameBtnBkg);
+}
+
+.gameButton:hover {
+  background: var(--gameBtnBkgHover);
+}

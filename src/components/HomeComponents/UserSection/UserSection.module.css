@@ -1,0 +1,133 @@
+.homeMsgWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* padding:0 6% */
+
+}
+
+.homeMsg {
+  width: 100%;
+  padding: 30px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  background: var(--modalBkg);
+  border-radius: 22px;
+  border: 1px solid var(--pageBorder);
+}
+
+.userInfoContent {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  gap:40px; 
+}
+
+.homeMsg img{
+  animation: shake 2s ease infinite;
+  filter: drop-shadow(0 0 0.75rem var(--goldColor)); 
+  width:180px;
+  cursor:pointer;
+}
+
+.depositActivationmsg {
+  color: var(--redColor);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.depositButton {
+  text-decoration: none;
+  padding: 9px 0px;
+  font-size: 1.4em;
+  font-weight: 600;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  animation: shake 1.5s ease infinite;
+  color: var(--lightColor);
+  background: var(--goldBtnBkg);
+  border-radius: var(--btnRadius);
+}
+
+.depositButton:hover {
+  background: var(--goldBtnBkgHover);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.rejectrequestmsg {
+  color: var(--redColor);
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
+.depositpendingmsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--lightColor);
+}
+
+@media only screen and (max-width: 1024px) {
+  .homeMsgWrapper {
+    justify-content: center;
+  }
+   
+  .homeMsg {
+    width: 85%;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    } 
+}

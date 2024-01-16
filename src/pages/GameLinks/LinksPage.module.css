@@ -1,0 +1,86 @@
+.linkstOverlay {
+  padding: 2% 30%;
+  background: url('../../assets/LinksPageBkg.webp');
+  background-size: cover;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 3%;
+  background: #b0b7c511;
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  backdrop-filter: blur(10px);
+}
+
+.sectionContentWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.linkContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 58px;
+  color: var(--lightColor);
+  font-weight: 600;
+  border: 1px solid var(--lightColor);
+  cursor: pointer;
+  background: var(--modalBkg);
+}
+
+.linkContent:hover {
+  background: transparent linear-gradient(228deg, #09152e 0%, #202e49 100%);
+}
+
+.linkNameGrp {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linkNameGrp span {
+  padding: 10px 17px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid var(--lightColor);
+}
+
+.noAccountWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  color: var(--lightColor);
+  padding-top: 15px;
+}
+
+.noAccountWrapper div:nth-child(2) {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.customerMessageWrapper p {
+  text-align: center;
+  color: var(--lightColor);
+}
+
+@media only screen and (max-width: 1440px) {
+  .linkstOverlay {
+    padding: 2% 15%;
+  }
+}

@@ -1,0 +1,22 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--lightColor);
+  cursor: pointer;
+  background: var(--goldBtnBkg);
+  border-radius: var(--btnRadius);
+  border: 1px solid var(--lightColor);
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+.buttonWrapper span {
+  display: flex;
+  gap: 5px;
+}
+
+.buttonWrapper:hover {
+  background: var(--goldBtnBkgHover);
+}

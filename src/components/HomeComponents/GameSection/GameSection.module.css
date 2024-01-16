@@ -1,0 +1,118 @@
+.sectionOverlay {
+  width: 100%;
+
+}
+
+.sectionWraper {
+  display: flex;
+  /* padding: 0% 8%; */
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logoSection img {
+  width: 40px;
+}
+
+.logoSection h4 {
+  margin: 0;
+  color: var(--goldColor);
+  font-size: 26px;
+  text-shadow: 2px 2px 5px var(--goldColor);
+  ;
+}
+
+.partition {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.gamesOverlay {
+  /* padding:0 30px; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 1;
+  /* flex: 0 0 75%;  */
+  /* 70% width */
+  /* justify-content: center; */
+}
+
+.gamesSection {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+  /* width: 100%; */
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.bigGame {
+  /* max-height: 290px; */
+  height: 100%;
+}
+
+.bigGame img {
+  border-radius: 23px;
+  width: 100%;
+  height: 100%;
+}
+
+.gamesSection img:hover {
+  cursor: pointer;
+}
+
+.spclStyle {
+  width: 546px !important;
+  height: 220px !important;
+  background-image: none !important;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.imageWraper {
+  /* flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 220px;*/
+  /* max-height: 220px; */
+  width: calc((100% - 120px) / 5);
+
+  cursor: pointer
+}
+
+.imageWraper.hovered {
+  transform: translateY(-15px);
+  cursor: pointer;
+  /* box-shadow: 0 0 20px var(--lightColor); */
+
+}
+
+.imageWraper img {
+  border-radius: 23px;
+  /* padding: 5px 0 10px 0; */
+  opacity: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* max-height: 220px; */
+}
+
+/* 
+@media only screen and (max-width: 1440px) {
+  .sectionWraper {
+    padding: 0% 2%
+  }
+} */

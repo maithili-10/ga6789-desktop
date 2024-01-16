@@ -1,0 +1,18 @@
+.maxMinWrapper {
+  display: flex;
+  justify-content: space-between;
+  color: var(--lightColor);
+}
+
+.columnView {
+  flex-direction: column;
+}
+
+.maxMinValue {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.invalidValue {
+  color: var(--redColor);
+}

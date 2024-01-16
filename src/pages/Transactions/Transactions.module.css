@@ -1,0 +1,59 @@
+.transactionWrapper {
+  width: 70%;
+}
+
+.transactionWrapper h3 {
+  margin: 0px;
+  text-align: center
+}
+
+.transactionTable {
+  padding: 30px 0 10px 0;
+}
+
+.transactionTable table {
+  width: 100%;
+  text-align: left;
+}
+
+.transactionTable table thead tr th {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.transactionTable table tbody tr {
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.chip {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  padding: 6px 3px;
+  width: 45%;
+  border-radius: 7px;
+  color: #94A9C6;
+  border: 1px solid #94A9C6;
+  background-color: #1A2B44;
+}
+
+.processingChip {
+  color: #FFC36A;
+  background-color: #482B00;
+  border-color: #FFC36A;
+}
+
+.successChip {
+  color: #00FFB5;
+  background-color: #004430;
+  border-color: #00FFB5;
+}
+
+.rejectChip {
+  color: #FF5757;
+  background-color: #4D000A;
+  border-color: #FF5757;
+}

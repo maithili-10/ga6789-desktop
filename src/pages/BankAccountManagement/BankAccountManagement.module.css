@@ -1,0 +1,93 @@
+.bankAccountWrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.allBanksOverlay {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.errorMsg {
+  text-align: center;
+  color: var(--redColor);
+}
+
+.banksSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bankCardWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.bankCard {
+  color: var(--lightColor);
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  background: var(--lightBtn);
+  background: transparent linear-gradient(90deg, #4D576E 0%, #333D54 100%);
+  border-radius: 10px;
+}
+
+.bankCard span {
+  font-size: 12px;
+}
+
+.bankCard span:nth-child(2) {
+  font-size: 15px;
+}
+
+.bankCardContent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.bankCard:hover {
+  background: transparent linear-gradient(90deg, #333D54 0%, #4D576E 100%);
+}
+
+.deleteBankImage {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 18px;
+}
+
+.deleteBankImage img {
+  width: 18px;
+  cursor: pointer;
+}
+
+.addBnksBtn {
+  margin: 0 auto;
+  text-align: center;
+  width: 220px;
+  padding: 10px;
+  color: var(--lightColor);
+  cursor: pointer;
+  background: var(--activeBtn);
+  border: 1px solid var(--lightColor);
+  border-radius: var(--btnRadius);
+  font-family: 'Roboto', sans-serif;
+}
+
+.addBnksBtn:hover {
+  background: var(--activeBtnHover);
+}
+
+.addBnksBtn.disabled {
+  color: var(--disableColor);
+  cursor: not-allowed;
+  background: var(--disableBkg);
+  border-color: var(--disableBkg);
+}

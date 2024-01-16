@@ -1,0 +1,270 @@
+.androidOverlay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: url('../../../assets/DownloadIcons/DownloadBkg.webp');
+  background-size: cover;
+  padding: 30px 15%;
+}
+
+.downloadsOverlay {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: right;
+  position: relative;
+  right: 0;
+}
+
+.downloadWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--goldColor);
+  font-size: 22px;
+
+}
+
+.backSection img {
+  width: 10px;
+  cursor: pointer;
+}
+
+.downloadButton ::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--goldColor);
+  pointer-events: none;
+}
+
+.downloadButton {
+  padding: 5px 15px;
+  background: var(--gameBtnBkg);
+  position: relative;
+  cursor: pointer;
+  border: 0.15em solid var(--goldColor);
+  border-radius: 0.45em;
+  perspective: 2em;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--darkColor);
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--goldColor),
+    0px 0px 0.5em 0px var(--goldColor);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--goldColor),
+    0px 0px 0.5em 0px var(--goldColor);
+  box-shadow: inset 0px 0px 0.5em 0px var(--goldColor),
+    0px 0px 0.5em 0px var(--goldColor);
+  animation: border-flicker 2s linear infinite;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.downloadButton a {
+  text-decoration: none;
+  color: var(--darkColor);
+}
+
+.glowingTxt {
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--goldColor);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--goldColor);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--goldColor);
+  animation: text-flicker 3s linear infinite;
+}
+
+.faultyLetter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+.downloadButton:hover {
+  text-shadow: none;
+  animation: none;
+}
+
+.downloadButton:hover .glowingTxt {
+  animation: none;
+}
+
+.downloadButton:hover .faultyLetter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.downloadButton:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.downloadButton:hover:after {
+  opacity: 1;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 0.1;
+  }
+
+  4% {
+    opacity: 0.5;
+  }
+
+  19% {
+    opacity: 0.5;
+  }
+
+  21% {
+    opacity: 0.1;
+  }
+
+  23% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.5;
+  }
+
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.3;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.androidWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background: var(--lightBkg);
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  backdrop-filter: blur(10px);
+  width: calc(100% - 60px);
+}
+
+.ImageCard {
+  cursor: pointer;
+  padding: 0px 15px 15px 15px;
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  background: var(--modalBkg);
+}
+
+.ImageCard p {
+  margin: 10px 0;
+  color: var(--lightColor);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.ImageCard img {
+  border: 1px solid var(--pageBorder);
+  border-radius: 10px;
+  width: 180px;
+  height: 350px;
+}

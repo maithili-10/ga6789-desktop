@@ -1,0 +1,49 @@
+.headerLinksOverlay {
+  position: absolute;
+  right: 2%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.headerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.headerLinks div {
+  cursor: pointer;
+}
+
+.link {
+  color: var(--headerFooterColor);
+}
+
+.activeLink {
+  color: var(--goldColor);
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  padding: 6px 0;
+  width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent linear-gradient(108deg, #202F4E 0%, #10192D 33%, #10192D 64%, #202F4E 100%);
+  border: 1px solid var(--lightColor);
+  border-radius: 3px;
+}
+
+.logoutBtn img {
+  width: 18px;
+}
+
+.logoutBtn:hover {
+  background: transparent linear-gradient(360deg, #202F4E 0%, #10192D 33%, #10192D 64%, #202F4E 100%);
+}

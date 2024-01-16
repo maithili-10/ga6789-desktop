@@ -1,0 +1,73 @@
+.modalOverlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--modalOverlayBkg);
+}
+
+.logoutOverlay {
+  width: 350px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--pageBorder);
+  border-radius: 15px;
+  background: var(--modalBkg);
+}
+
+.logoutImgwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoutImgwrapper p {
+  margin: 0;
+  color: var(--goldColor);
+  font-size: 20px;
+}
+
+.logoutMsg {
+  margin-top: 5px;
+  color: var(--lightColor);
+  text-align: center;
+  font-size: 15px;
+}
+
+.logoutButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.logoutButtons button {
+  border-radius: 19px;
+  font-size: 16px;
+  padding: 6px 22px;
+  color: var(--lightColor);
+  cursor: pointer;
+  background: var(--activeBtn);
+}
+
+.logoutButtons button:nth-child(1) {
+  border: 1px solid var(--pageBorder);
+  background: var(--disableBkg);
+  color: var(--disableColor);
+}
+
+.logoutButtons button:nth-child(2) {
+  border: 1px solid var(--lightColor);
+  background-color: transparent;
+}
+
+.logoutButtons button:nth-child(1):hover {
+  color: var(--lightColor);
+  border-color: var(--lightColor);
+}
+
+.logoutButtons button:nth-child(2):hover {
+  background: var(--activeBtnHover);
+}

@@ -1,0 +1,91 @@
+.profileLayoutOverlay {
+  padding: 2% 8%;
+  background: url('../../assets/LoginIcons/Login\ -\ Registeration\ BG.webp');
+  background-size: cover;
+  height: 74vh;
+}
+
+.profileLayoutWrapper {
+  display: flex;
+  flex-direction: column;
+  background: #04041da4;
+  border: 1px solid var(--pageBorder);
+  border-radius: 10px;
+  /* backdrop-filter: blur(10px); */
+  height: 100%;
+}
+
+.profileLayoutHeader {
+  display: flex;
+  justify-content: space-between;
+  color: var(--lightColor);
+  padding: 15px;
+  border-bottom: 1px solid var(--pageBorder);
+  width: 97%;
+  margin: 0 auto;
+}
+
+.profileLayoutBody {
+  display: flex;
+  height: 100%;
+  overflow: auto;
+}
+
+.profileLayoutAside {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 25px;
+  border-right: 1px solid var(--pageBorder);
+  overflow: auto;
+}
+
+.pageOption {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  color: var(--lightColor);
+  padding-left: 18px;
+  border-left: 3px solid transparent;
+}
+
+.activePage {
+  color: var(--goldColor);
+  border-color: var(--goldColor);
+}
+
+.profileLayoutMainOverlay {
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+}
+
+.profileLayoutMainOverlay::-webkit-scrollbar-thumb {
+  background: transparent linear-gradient(90deg, rgb(55, 62, 73) 0%, rgb(65, 53, 53));
+}
+
+.profileLayoutMainWrapper {
+  padding: 16px;
+  color: var(--lightColor);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1440px) {
+  .profileLayoutOverlay {
+    padding: 2%;
+    height: 100%;
+  }
+
+  .profileLayoutHeader {
+    width: 96%;
+  }
+}

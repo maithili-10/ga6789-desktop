@@ -1,0 +1,53 @@
+.footerOverlay {
+  color: var(--headerFooterColor);
+  font-size: 13px;
+}
+
+.mainFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: var(--secondaryHeaderBkg);
+}
+
+.mainFooterLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.mainFooterLinks span,
+.showDetails span {
+  cursor: pointer;
+  padding-right: 10px;
+  border-right: 1px solid var(--headerFooterColor);
+}
+
+.goldColor {
+  color: var(--goldColor);
+}
+
+.showDetails {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.showDetails img {
+  cursor: pointer;
+}
+
+.copyrightWrapper {
+  text-align: center;
+  padding: 10px 0;
+  background: var(--headerBkg);
+}
+
+.noBorder {
+  border-right: none !important
+}
+
+@media only screen and (max-width: 1440px) {
+  .mainFooter {
+    padding: 20px 2%;
+  }
+}

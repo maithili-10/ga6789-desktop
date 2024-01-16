@@ -1,0 +1,195 @@
+.agencyRegisterWrapper {
+  height: 850px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url('../../assets/LoginIcons/LoginBg.webp');
+  background-size: cover;
+}
+
+.formOverlay {
+  width: 500px;
+  margin: 0 15% 0 0;
+  background: var(--formBkg);
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--fromBorderRadius);
+  box-shadow: var(--formShadow);
+}
+
+.formWrapper {
+  padding: 40px;
+  color: var(--lightColor);
+}
+
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.agencyRegisterFormHeader {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.agencyRegisterFormBody {
+  padding: 30px 0px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.agentIdWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.agentIdWrapper span:nth-child(1) {
+  font-size: 12px;
+}
+
+.agentIdWrapper span:nth-child(2) {
+  font-weight: bold;
+}
+
+.requiredLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.requiredLabel span {
+  color: var(--goldColor);
+  font-size: 20px;
+}
+
+.formInput {
+  display: flex;
+  align-items: center;
+  background-color: var(--inputBkg);
+  border-radius: var(--inputRadius);
+}
+
+.formInput input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 15px 0 15px 20px;
+  color: var(--lightColor);
+  background-color: transparent;
+}
+
+.formInput input:focus,
+.formInput input:active,
+.formInput input:focus-within {
+  border: none;
+  outline: none;
+}
+
+.formInput input::placeholder {
+  color: var(--lightColor);
+  opacity: 0.3;
+}
+
+.error {
+  color: var(--redColor);
+  font-size: 0.9rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.passwordChecksMsg {
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 0 5px 0;
+  color: var(--goldColor);
+}
+
+.passwordChecksMsg span {
+  color: #41DF60;
+  font-weight: 900;
+}
+
+.formInput img {
+  cursor: pointer;
+  margin-right: 15px;
+  width: 20px;
+}
+
+.passwordValidation {
+  display: flex;
+  gap: 3px;
+  padding-top: 3px;
+}
+
+.passwordValidation span {
+  display: flex;
+  align-items: center;
+}
+
+.success {
+  color: #41DF60;
+  font-size: 0.9rem;
+}
+
+.agencyRegisterSubmitButton {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 0px;
+  cursor: pointer;
+  width: 100%;
+  color: var(--lightColor);
+  background: var(--activeBtn);
+  border: 1px solid var(--lightColor);
+  border-radius: var(--btnRadius);
+}
+
+.agencyRegisterSubmitButton:hover {
+  background: var(--activeBtnHover);
+}
+
+.loading,
+.loading:hover {
+  border-color: var(--disableBkg);
+  color: var(--disableColor);
+  background: var(--disableBkg);
+  cursor: not-allowed;
+}
+
+.loginSection {
+  font-weight: 600;
+  text-align: center;
+}
+
+.loginLink {
+  margin-left: 0.4rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1440px) {
+  .formOverlay {
+    width: 450px;
+    margin: 0 5% 0 0;
+  }
+
+  .formWrapper {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .formOverlay {
+    width: 400px;
+  }
+}

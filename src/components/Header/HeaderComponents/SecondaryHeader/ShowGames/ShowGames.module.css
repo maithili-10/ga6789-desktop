@@ -1,0 +1,82 @@
+.headerGameList {
+  position: absolute;
+  width: 100%;
+  padding: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  background-color: #1A253E;
+  z-index: 2;
+  height: 160px;
+  /* top: -125px; */
+  opacity: 0;
+  /* top: 116px;
+  opacity: 1; */
+  transition: top 0.5s ease, opacity 0.1s ease;
+}
+
+.open {
+  top: 116px;
+  opacity: 1;
+}
+
+.dagaRatio {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 120px;
+  height: 24px;
+  background: var(--dagaColor);
+  clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
+}
+
+.dagaRatio span {
+  font-weight: bold;
+  color: var(--darkColor);
+  padding-left: 30%;
+}
+
+.otherGamesRatio {
+  top: 0;
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 24px;
+  background: var(--headerFooterColor);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%);
+}
+
+.otherGamesRatio span {
+  padding-left: 50%;
+  font-weight: bold;
+  color: var(--darkColor);
+}
+
+
+.gameImgWrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  transition: transform 0.3s ease;
+  /* width: 180px; */
+  /* height: 210px; */
+  width: 130px;
+  height: 160px;
+}
+
+.gameImgWrapper img {
+  cursor: pointer;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.gameImgWrapper:hover {
+  /* background: var(--headerBkg); */
+  /* border-color: var(--goldColor); */
+  /* box-shadow: 0px 3px 15px #FCE8AE3B; */
+  border-radius: 5px;
+  transform: scale(1.15);
+
+}

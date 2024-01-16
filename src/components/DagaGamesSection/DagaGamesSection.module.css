@@ -1,0 +1,88 @@
+.wrapper {
+    width: 100%;
+    padding: 50px 0 0 0;
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.GamesSection {
+    gap: 50px;
+    width: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.gamesNameSection {
+    align-items: center;
+    gap: 20px;
+}
+
+.gamesNameSection>span {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 22px;
+    font-family: 'SVN-Days', sans-serif;
+    color: #F7DE6B;
+    text-transform: uppercase;
+}
+
+.gameImgWrapper {
+    /* background-color: peru; */
+    /* width: 225px;
+    height: 190px; */
+    /* height: 100%; */
+}
+
+.gameImgWrapper>img {
+    width: 100%;
+    /* height: 100%;
+    object-fit: contain; */
+    cursor: pointer;
+}
+
+.dagaImgWrapper {
+    /* width: 474px; */
+    /* height: 399px; */
+    /* width: 700px; */
+    /* height: 696px; */
+}
+
+.dagaImgWrapper>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.dagaLogoWrapper {
+    width: 342px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.dagaLogoWrapper>img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.dagaWrapperStyle {
+    position: relative;
+    align-items: center;
+    width: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}

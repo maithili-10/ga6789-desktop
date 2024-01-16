@@ -1,0 +1,29 @@
+.lotteryWrapper {
+  padding: 5% 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: url('../../assets/LotteryPage/LotteryBkg.png');
+  background-size: cover;
+}
+
+.gamesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  padding: 0 8%;
+}
+
+.games {
+  position: relative;
+  padding-top: 20px;
+}
+
+.gamesButtonWrapper {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}

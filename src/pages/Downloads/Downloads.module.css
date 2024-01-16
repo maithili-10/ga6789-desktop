@@ -1,0 +1,56 @@
+.downloadsOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  background: url('../../assets/LoginIcons/Login\ -\ Registeration\ BG.webp');
+  background-size: cover;
+}
+
+.downloadContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background: #b0b7c511;
+  border: 1px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+  backdrop-filter: blur(10px);
+}
+
+.linkContent {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 300px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--goldColor);
+  border: 1px solid var(--goldColor);
+  background: var(--modalBkg);
+  border-radius: 58px;
+}
+
+.linkContent:active {
+  padding-left: 15px;
+}
+
+.linkNameGrp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.linkNameGrp div:nth-child(2) {
+  font-size: 12px;
+}
+
+.linkContent:hover {
+  background: transparent linear-gradient(228deg, #09152e 0%, #202e49 100%);
+}
+
+@media only screen and (max-width: 414px) {
+  .downloadContentWrapper {
+    width: 85%;
+  }
+}

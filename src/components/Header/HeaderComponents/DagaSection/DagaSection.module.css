@@ -1,0 +1,25 @@
+.dagaWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: var(--dagaColor);
+  padding: 3px 0;
+}
+
+.hotImg{
+  position:relative;
+  width:18px;
+  bottom:8px;
+  -webkit-animation: mover .9s infinite  alternate;
+  animation: mover .9s infinite  alternate;
+}
+/* animation */
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-2px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-2px); }
+}

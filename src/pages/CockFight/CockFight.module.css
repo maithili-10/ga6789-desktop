@@ -1,0 +1,31 @@
+.cockFightWrapper {
+  display: flex;
+  align-items: center;
+  padding: 5% 0;
+  background: url('../../assets/CockFightPage//CockFightBkg.png');
+  background-size: cover;
+}
+
+.cockFightContent {
+  font-style: italic;
+  color: var(--lightColor);
+  text-shadow: 0px 3px 6px #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.iconTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bannerWrapper {
+  width: 50%;
+}
+
+.bannerWrapper img {
+  width: 100%;
+}

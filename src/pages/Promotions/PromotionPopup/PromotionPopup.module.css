@@ -1,0 +1,87 @@
+.modalOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--modalOverlayBkg)
+}
+
+.modalWrapper {
+  width: 550px;
+  max-height: 520px;
+  padding: 10px 0px;
+  overflow: auto;
+  background: var(--modalBkg);
+  border: 1px solid var(--lightColor);
+  border-radius: 7px;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.closeIcon {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 50%;
+  padding: 2px;
+  color: var(--lightColor);
+  background: var(--lightBtn);
+}
+
+.icon:hover {
+  background: var(--disableBkg);
+  color: var(--lightColor);
+}
+
+.innerContent {
+  flex-grow: 1;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--lightColor);
+}
+.imgWrapper{
+    height: 125px ;
+  /* max-width: 432px; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imgWrapper img {
+  border: 1px solid var(--lightColor);
+  border-radius: 7px;
+  /* object-fit: contain; */
+  width: 100%;
+  height: 100%;
+}
+
+.innerContent span {
+  color: var(--lightColor) !important;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.dates {
+  font-size: 0.8rem;
+}
+
+.dates table tbody tr td {
+  border-color: var(--lightColor) !important;
+}
+
+.dates p {
+  background: transparent !important;
+}

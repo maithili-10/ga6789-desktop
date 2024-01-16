@@ -1,0 +1,48 @@
+.singleTranContentOverlay {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleTranContentWrapper {
+  width: 500px;
+  padding: 20px;
+  background: var(--modalBkg);
+  border: 0.3px solid var(--pageBorder);
+  border-radius: var(--modalRadius);
+}
+
+.titleWrapper {
+  color: var(--lightColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--pageBorder);
+  margin-bottom: 10px;
+}
+
+.titleWrapper h3 {
+  margin: 0;
+}
+
+.closeIcon {
+  display: flex;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 2px;
+  color: var(--lightColor);
+}
+
+.icon:hover {
+  background: var(--disableBkg);
+  color: var(--lightColor);
+}
